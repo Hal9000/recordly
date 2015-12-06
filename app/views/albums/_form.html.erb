@@ -16,10 +16,8 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= collection_select(:album, :artist_id, @artists, :id, :artist_name, {:prompt => true}) %>
     <%= f.label :artist_id %><br>
-    <%= f.number_field :artist_id %>
-
+    <%= collection_select(:album, :artist_id, @artists, :id, :name, {:prompt => true}) %>
   </div>
   <div class="actions">
     <%= f.submit %>
