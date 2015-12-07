@@ -5,7 +5,8 @@ See original problem description below.
 My instructions were to "work on this about an hour" to show in general how I 
 would do things.
 
-Personally, I would not be able to complete this task in 5 hours.
+Personally, I would not be able to complete this task in the "3 to 5" hours
+estimated in the problem description.
 
 ###Assumptions###
  - Use Ruby on Rails
@@ -25,22 +26,22 @@ Personally, I would not be able to complete this task in 5 hours.
  - Created Heroku account and installed command line tools
  - Created Session controller, front_page action and front_page view
  - Created controllers: Users, Albums, Artists, Songs
- - Started to edit artists controller
+ - Define relations: 
+    Artist has_many :albums 
+    Album has_many :songs
+    Artist has_many :songs, through: :albums
+ - A few tests (automated and console)
+ - Initial deploy to heroku
+ - Started to edit views and controllers
 
 ##TO DO##
- - Define relations
- -   Artist has_many :albums
- -   Album has_many :songs
- -   Artist has_many :songs, through: :albums
  - Finish all CRUD logic
  - Make decision about users and favorites
  - Integrate "current user" logic
  - Add Favorites + functionality
- - Create all views: Albums, Artists, Songs, Favorites
  - Work on search feature (incremental via AJAX?)
  - Seed database and test iteratively
  - Test manually
- - Deploy to heroku
 
 
 ##Problem description##
